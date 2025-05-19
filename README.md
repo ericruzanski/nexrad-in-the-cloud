@@ -7,17 +7,17 @@
 
 ## Overview
 
-This project retrieves and visualizes radar reflectivity data from NEXRAD Level II stations over Tennessee using data hosted on AWS. It accesses the most recent radar files from the `noaa-nexrad-level2` public S3 bucket, processes the data with [Py-ART](https://arm-doe.github.io/pyart/), and overlays it on a Cartopy map with county and state boundaries.
+This project is a collection of scripts and Jupyter Notebooks that retrieve and visualize Level II weather radar reflectivity data from NOAA NEXRAD stations. The data is sourced from AWS. The scripts access the most recent radar files from the `noaa-nexrad-level2` public S3 bucket, processes the data using [Py-ART](https://arm-doe.github.io/pyart/), and overlay it on a Cartopy map with county and state boundaries.
 
-If radar data is unavailable for a particular site, the script will skip plotting for that station and optionally annotate the map with a placeholder.
+If radar data is unavailable for a specific site, the script skips plotting for that station and, optionally, annotates the map with a message placeholder.
 
 ## Features
 
 - Fetches NEXRAD Level II data directly from AWS S3
-- Supports multiple stations (e.g., KNQA, KOHX, KMRX)
-- Visualizes radar reflectivity with colormap and overlays
-- Annotates missing/offline radar stations
 - Automatically handles closest timestamp retrieval
+- Plots multiple radars on a single map
+- Visualizes radar reflectivity with accurate colormap and overlays
+- Annotates missing/offline radar stations
 
 ## Installation
 
@@ -29,7 +29,7 @@ pip install -r requirements.txt
 
 ## Running the Notebook
 
-Launch the Jupyter Notebook interface and open `tennessee_radar_reflectivity.ipynb`:
+Launch the Jupyter Notebook interface and open `NEXRAD_Reflectivity_Tennessee.ipynb`:
 
 ```bash
 jupyter lab
