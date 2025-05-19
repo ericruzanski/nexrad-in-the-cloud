@@ -19,14 +19,6 @@ If radar data is unavailable for a specific site, the script skips plotting for 
 - Visualizes radar reflectivity with accurate colormap and overlays
 - Annotates missing/offline radar stations
 
-## Installation
-
-Install the required packages with:
-
-```bash
-pip install -r requirements.txt
-```
-
 ## Running the Notebook
 
 Launch the Jupyter Notebook interface and open `NEXRAD_Reflectivity_Tennessee.ipynb`:
